@@ -1,0 +1,26 @@
+Copyright (c) 2026 Ilyes. All rights reserved.
+
+This repository is SOURCE-AVAILABLE for portfolio and evaluation purposes.
+
+You MAY:
+  - Clone the repository and run GestApp locally for personal evaluation.
+  - Study the code and open issues / suggest improvements.
+
+You MAY NOT, without prior written permission from the author:
+  - Redistribute, publish, sublicense, or sell copies of the software
+    (in source or binary/installer form, modified or not).
+  - Deploy the software commercially for third parties
+    (paid installations, SaaS hosting, client deliveries).
+  - Remove or circumvent licence / activation mechanisms.
+
+The private seller tooling (licence generator, client registry) is NOT part
+of this repository and is never distributed.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Contact: open a GitHub issue on this repository for any licensing request.
