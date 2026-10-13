@@ -1,7 +1,7 @@
 {
   "name": "gestapp",
   "version": "1.0.0",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "description": "GestApp - Offline-first business management for restaurants and retail (Electron + React + LAN sync)",
   "main": "electron.js",
   "homepage": "./",
@@ -80,3 +80,4 @@
     ]
   }
 }
+
