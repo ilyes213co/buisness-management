@@ -8,6 +8,7 @@ const path     = require("path");
 const { fork } = require("child_process");
 const os       = require("os");
 const net      = require("net");
+const fs       = require("fs");
 
 // ─── CONFIGURATION ────────────────────────────────────────────────────────────
 const SERVER_PORT = 4000;
@@ -67,7 +68,13 @@ function createWindow() {
     webPreferences: { nodeIntegration: true, contextIsolation: false },
     backgroundColor: "#0a0a0f",
   });
-  mainWindow.loadFile(path.join(__dirname, "build", "index.html"));
+  const indexPath = path.join(__dirname, "build", "index.html");
+  if (fs.existsSync(indexPath)) {
+    mainWindow.loadFile(indexPath);
+  } else {
+    // No production build yet (npm run build not run): fall back to the React dev server.
+    mainWindow.loadURL("http://localhost:3000");
+  }
   mainWindow.setMenuBarVisibility(false);
   mainWindow.on("closed", () => { mainWindow = null; });
 }

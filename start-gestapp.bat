@@ -2,8 +2,8 @@
 title GestApp Server
 
 :: ─── CONFIGURATION ───────────────────────────────────────────────────────────
-:: Modifie ce chemin si ton projet est ailleurs
-set GESTAPP_DIR=C:\Users\namgh\Desktop\gestapp
+:: Dossier du projet = dossier contenant ce script (rien a modifier)
+set "GESTAPP_DIR=%~dp0"
 
 :: ─── VÉRIFICATION DU DOSSIER ─────────────────────────────────────────────────
 if not exist "%GESTAPP_DIR%" (

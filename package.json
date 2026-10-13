@@ -1,7 +1,8 @@
 {
   "name": "gestapp",
   "version": "1.0.0",
-  "description": "GestApp — Logiciel de gestion commerciale multi-appareils",
+  "license": "MIT",
+  "description": "GestApp - Offline-first business management for restaurants and retail (Electron + React + LAN sync)",
   "main": "electron.js",
   "homepage": "./",
   "scripts": {
@@ -41,7 +42,9 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "public/logo512.png"
+      "icon": "public/logo.ico",
+      "signAndEditExecutable": false,
+      "signDlls": false
     },
     "nsis": {
       "oneClick": false,
@@ -77,3 +80,4 @@
     ]
   }
 }
+

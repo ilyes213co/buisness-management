@@ -1,39 +1,55 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+﻿# ─── Dependencies ───
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+# ─── Testing / coverage ───
 /coverage
 
-# production
+# ─── Production build (React) ───
 /build
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Generated Electron builds and packaged runtime
+# ─── Electron packaging (generated, never commit) ───
 /dist*/
-/GestApp.exe
-/Uninstall GestApp.exe
+*.exe
 /locales/
 /resources/
-/*.dll
-/*.pak
+*.dll
+*.pak
 /icudtl.dat
 /snapshot_blob.bin
 /v8_context_snapshot.bin
 /vk_swiftshader_icd.json
+LICENSE.electron.txt
+LICENSES.chromium.html
 
-# Local application data
+# ─── Local runtime data (per-machine) ───
 /gestapp-data.json
+gestapp-data.json.tmp
+
+# ─── PRIVATE seller tooling — NEVER publish ───
+# Licence generator + client registry stay on your PC / USB key only.
+tools/
+
+# ─── IDE / OS ───
+.kilo/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# ─── Env / logs ───
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ─── Android (removed — see README) ───
+android/
+local.properties

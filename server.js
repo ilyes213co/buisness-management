@@ -28,6 +28,8 @@ const SHARED_KEYS = [
   "gestapp_cat_categories",
   "gestapp_comptes",
   "gestapp_logs",
+  "gestapp_movements",
+  "gestapp_inventory_sessions",
 ];
 
 // ─── UTILITAIRES ──────────────────────────────────────────────────────────────
